@@ -21,6 +21,15 @@ public class NameService {
     public String extractLastName(String fullName) {
         String lastName = null;
         
+        if(fullName == null || fullName.isEmpty()){
+            throw new IllegalArgumentException("Please enter in a valid first and last name");
+        } 
+        
+        String parts [] = fullName.split(" ");
+        if(parts.length < 2 ){
+            throw new IllegalArgumentException("Please enter in a valid name");
+        }
+        lastName = parts[parts.length -1];
         // write your code here to extract the lastName and store in the
         // above local variable
         
