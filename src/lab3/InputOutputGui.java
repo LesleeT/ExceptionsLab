@@ -15,12 +15,8 @@ public class InputOutputGui {
         nameService = new NameService();
     }
 
-    public void startConversation() {
-        
-        //String fullName = JOptionPane.showInputDialog("Enter full name:");
-        //String lastName = nameService.extractLastName(fullName);
-        //String msg = "Your last name is: " + lastName;
-        //JOptionPane.showMessageDialog(null, msg);
+    public void startConversation() throws RuntimeException {
+
         String fullName = JOptionPane.showInputDialog("Enter full name:");
         String lastName = "";
         
