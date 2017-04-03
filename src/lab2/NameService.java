@@ -30,9 +30,7 @@ public class NameService {
             throw new IllegalArgumentException("Please enter in a valid name");
         }
         lastName = parts[parts.length -1];
-        // write your code here to extract the lastName and store in the
-        // above local variable
-        
+
         return lastName;
     }
     
